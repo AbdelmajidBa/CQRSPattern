@@ -9,4 +9,4 @@ In this project, I implemented CQRS Pattern with C#. The solution follows the Do
 * [Infrastructure](./Infrastructure)
 
 To learn more about CQRS, I advise you my topic on Medium
-[Understanding Dependency Injection with C#](https://medium.com/@abdelmajid.baco/understanding-dependency-injection-with-c-7da4ad9986e9)
+[CQRS Pattern with C#](https://medium.com/@abdelmajid.baco/understanding-dependency-injection-with-c-7da4ad9986e9)
