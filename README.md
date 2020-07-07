@@ -5,7 +5,7 @@ In this project, I implemented CQRS Pattern with C#. The solution follows the Do
 * [UIConsole](./UIConsole)
 * [WebApi](./WebApi)
 * [Application)](./Application)
-* [Domain](./Domain)
+* [Domain](./Domaine)
 * [Infrastructure](./Infrastructure)
 
 To learn more about CQRS, I advise you my topic on Medium
