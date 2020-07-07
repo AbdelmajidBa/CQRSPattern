@@ -4,7 +4,7 @@ In this project, I implemented CQRS Pattern with C#. The solution follows the Do
 
 * [UIConsole](./UIConsole)
 * [WebApi](./WebApi)
-* [Application)](./Application)
+* [Application](./Application)
 * [Domain](./Domaine)
 * [Infrastructure](./Infrastructure)
 
