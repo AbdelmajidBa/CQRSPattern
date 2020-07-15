@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domaine.Entities
 {
-    public class Product
+    public class Product 
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
@@ -16,5 +16,21 @@ namespace Domaine.Entities
             
         }
         public int CurrentStock { get; set; }
+
+
+
+        public Product Clone()
+        {
+            return new Product 
+            { 
+                Id = this.Id, 
+                Name = this.Name, 
+                Description = this.Description, 
+                UnitPrice = this.UnitPrice, 
+                CurrentStock = this.CurrentStock 
+            };
+        }
+
+
     }
 }

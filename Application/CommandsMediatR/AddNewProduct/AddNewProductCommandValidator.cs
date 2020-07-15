@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Application.Commands
+namespace Application.CommandsMediatR
 {
     public class AddNewProductCommandValidator : AbstractValidator<AddNewProductCommand>
     {
@@ -14,6 +14,4 @@ namespace Application.Commands
             RuleFor(p => p.Description).MaximumLength(400).WithMessage("Product Description exceeds the authorized size which is 400");
         }
     }
-
-   
 }

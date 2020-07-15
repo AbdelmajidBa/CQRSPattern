@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Application.Queries
+namespace Application.Common
 {
     public class ProductDisplay : IResult
     {

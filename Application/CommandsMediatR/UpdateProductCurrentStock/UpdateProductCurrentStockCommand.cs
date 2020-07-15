@@ -1,14 +1,14 @@
-﻿using Application.Interfaces;
+﻿using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Application.Queries
+namespace Application.CommandsMediatR
 {
-    public class ProductInventory :IResult
+    public class UpdateProductCurrentStockCommand : IRequest
     {
         public Guid Id { get; set; }
-        public string Name { get; set; }
         public int CurrentStock { get; set; }
+
     }
 }

@@ -1,5 +1,4 @@
-﻿using Application.Commands.AddNewProduct;
-using Application.Exceptions;
+﻿using Application.Exceptions;
 using Application.Interfaces;
 using Domaine.Entities;
 using FluentValidation.Results;

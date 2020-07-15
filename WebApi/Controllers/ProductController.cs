@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Commands;
+using Application.Common;
 using Application.Interfaces;
 using Application.Queries;
 using Domaine.Entities;
@@ -42,12 +43,7 @@ namespace WebApi.Controllers
 
             _commandDispatcher = new CommandDispatcher(_httpContextAccessor.HttpContext.RequestServices);
             _queryDispatcher = new QueryDispatcher(_httpContextAccessor.HttpContext.RequestServices);
-
-
-
         }
-
-
 
 
         // GET: api/<ProductController>
