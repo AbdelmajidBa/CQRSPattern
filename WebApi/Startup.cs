@@ -36,18 +36,18 @@ namespace WebApi
             services.AddHttpContextAccessor();
 
             //CQRS PAttern
-            //services.AddSingleton<IApplicationContext, ApplicationContext>()
-            //        //Add commands handlers
-            //        .AddScoped<ICommandHandler<AddNewProductCommand>, AddNewProductCommandHandler>()
-            //        .AddScoped<ICommandHandler<DeleteProductCommand>, DeleteProductCommandHandler>()
-            //        .AddScoped<ICommandHandler<UpdateProductCurrentStockCommand>, UpdateProductCurrentStockCommandHandler>()
-            //        .AddScoped<ICommandHandler<UpdateProductUnitPriceCommand>, UpdateProductUnitPriceCommandHandler>()
-            //        // Add queries handlers
-            //        .AddScoped<IQueryHandler<FindOutOfStockProductsQuery>, FindOutOfStockProductsQueryHandler>()
-            //        .AddScoped<IQueryHandler<GetProductsByNameQuery>, GetProductsByNameQueryHandler>()
+            services.AddSingleton<IApplicationContext, ApplicationContext>()
+                    //Add commands handlers
+                    .AddScoped<ICommandHandler<AddNewProductCommand>, AddNewProductCommandHandler>()
+                    .AddScoped<ICommandHandler<DeleteProductCommand>, DeleteProductCommandHandler>()
+                    .AddScoped<ICommandHandler<UpdateProductCurrentStockCommand>, UpdateProductCurrentStockCommandHandler>()
+                    .AddScoped<ICommandHandler<UpdateProductUnitPriceCommand>, UpdateProductUnitPriceCommandHandler>()
+                    // Add queries handlers
+                    .AddScoped<IQueryHandler<FindOutOfStockProductsQuery>, FindOutOfStockProductsQueryHandler>()
+                    .AddScoped<IQueryHandler<GetProductsByNameQuery>, GetProductsByNameQueryHandler>()
 
-            //        .AddScoped<ICommandDispatcher, CommandDispatcher>()
-            //        .AddScoped<IQueryDispatcher, QueryDispatcher>();
+                    .AddScoped<ICommandDispatcher, CommandDispatcher>()
+                    .AddScoped<IQueryDispatcher, QueryDispatcher>();
 
             //CQRS Pattern with MediatR
 
